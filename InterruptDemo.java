@@ -4,7 +4,7 @@ public class InterruptDemo {
         myInterrapt.start();
 
         try {
-            Thread.sleep(1000);
+            Thread.sleep(3100);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -31,8 +31,7 @@ class MyInterrapt extends Thread{
             }
             System.out.println("MyInterrupt: "+i);
             sleep(3000);
-           
-            
+                       
         }
     }catch (InterruptedException e) {
         System.out.println("Thread was interrupted during sleep...");
